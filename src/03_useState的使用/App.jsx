@@ -2,8 +2,8 @@ import React, { memo, useState } from 'react'
 
 const App = memo(() => {
   const [message, setMessage] = useState("Hello World")
-  const [count, setCount] = useState(100)
-  const [banners, setBanners] = useState([])
+  // const [count, setCount] = useState(100)
+  // const [banners, setBanners] = useState([])
 
   function changeMessage(){
     setMessage("你好啊,李银河")
