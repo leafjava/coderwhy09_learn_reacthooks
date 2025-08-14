@@ -17,6 +17,8 @@ function reducer(state,action){
   }
 }
 
+// useReducer+Context => redux
+
 const App = memo(() => {
   // const [count, setCount] = useState(0)
   const [state, dispatch] =  useReducer(reducer,{ counter:0,friends:[],user:{} })
