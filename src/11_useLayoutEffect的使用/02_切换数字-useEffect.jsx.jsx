@@ -3,19 +3,19 @@ import React, { memo, useEffect, useLayoutEffect, useState } from 'react'
 const App = memo(() => {
   const [count, setCount] = useState(100)
 
-  useLayoutEffect(() => {
-    console.log("useLayoutEffect")
-    if(count === 0){
-      setCount(Math.random() + 99)
-    }
-  })
-
-  // useEffect(()=> {
-  //   console.log("useEffect")
+  // useLayoutEffect(() => {
+  //   console.log("useLayoutEffect")
   //   if(count === 0){
   //     setCount(Math.random() + 99)
   //   }
   // })
+
+  useEffect(()=> {
+    console.log("useEffect")
+    if(count === 0){
+      setCount(Math.random() + 99)
+    }
+  })
 
   console.log("App render")
 
