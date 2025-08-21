@@ -11,18 +11,29 @@ import ReactDOM from 'react-dom/client';
 // import App from './09_useRef的使用/App';
 // import App from './10_useImperativeHand/App';
 // import App from './11_useLayoutEffect的使用/App';
+
 import App from './12_自定义Hooks/App';
 
-import {UserContext,ThemeContext} from "./05_useContext的使用/context"
-
+// import {UserContext,ThemeContext} from "./05_useContext的使用/context"
+import { UserContext,TokenContext } from './12_自定义Hooks/context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
     <UserContext.Provider value={{name:"why",level:99}}>
-      <ThemeContext.Provider value={{color:"red",size:30}}>
+      <TokenContext.Provider value={'coderwhy'}>
         <App />
-      </ThemeContext.Provider>
+      </TokenContext.Provider>
     </UserContext.Provider>
   // </React.StrictMode>
 );
+
+// root.render(
+//   // <React.StrictMode>
+//     <UserContext.Provider value={{name:"why",level:99}}>
+//       <ThemeContext.Provider value={{color:"red",size:30}}>
+//         <App />
+//       </ThemeContext.Provider>
+//     </UserContext.Provider>
+//   // </React.StrictMode>
+// );
