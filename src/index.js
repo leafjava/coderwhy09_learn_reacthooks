@@ -14,7 +14,9 @@ import store from './13_redux中的hooks/store'
 // import App from './11_useLayoutEffect的使用/App';
 
 // import App from './12_自定义Hooks/App';
-import App from './13_redux中的hooks/App';
+// import App from './13_redux中的hooks/App';
+import App from './14_useId的使用/App';
+
 // import {UserContext,ThemeContext} from "./05_useContext的使用/context"
 import { UserContext,TokenContext } from './12_自定义Hooks/context';
 import { Provider} from "react-redux"
